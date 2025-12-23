@@ -1,3 +1,4 @@
+import LogoutIcon from "../svg/LogoutIcon";
 import LogoArea from "./LogoArea";
 import Navigation from "./Navigation";
 
@@ -13,10 +14,7 @@ export default function SIdebar() {
           href="#"
           className="flex items-center gap-2.5 py-2 px-3 text-[14px] leading-[18px] tracking-[0] font-inter text-[#E55252]"
         >
-          <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none">
-            <path d="M16 17l5-5-5-5v3H9v4h7v3Z" fill="#E55252" />
-            <path d="M5 5h6v14H5z" stroke="#E55252" strokeWidth="2" />
-          </svg>
+          <LogoutIcon />
           <span>Log Out</span>
         </a>
       </div>

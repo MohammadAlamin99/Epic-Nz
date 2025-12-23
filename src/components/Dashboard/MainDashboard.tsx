@@ -36,7 +36,7 @@ export default function MainDashboard() {
   ];
 
   return (
-    <div className="pl-8 pt-11 text-white">
+    <div className="pl-8 pt-11 text-white h-screen overflow-y-scroll scrollbar-hide">
       <div>
         <h1 className="text-[32px] font-inter font-semibold leading-[150%]">
           Dashboard

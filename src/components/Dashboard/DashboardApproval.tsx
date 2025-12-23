@@ -54,10 +54,10 @@ export default function DashboardApproval() {
   ]);
 
   return (
-    <div className="bg-black text-white p-8">
+    <div className="bg-black text-white mt-[30px]">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Main Approvals Section */}
-        <div className="lg:col-span-2">
+        <div className="lg:col-span-2 border border-[#12271F] rounded-[12px] py-2.5 px-8">
           <div className="flex justify-between items-center mb-6">
             <h1 className="text-2xl font-bold">Pending Approvals</h1>
             <button className="text-gray-400 hover:text-white text-sm">
