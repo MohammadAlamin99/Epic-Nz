@@ -1,5 +1,7 @@
 import { CloudSun, MailCheck, MapPin, Users } from "lucide-react";
 import DashboardCard from "./DashboardCard";
+import DashboardChart from "./DashboardChart";
+import DashboardApproval from "./DashboardApproval";
 
 export default function MainDashboard() {
   const cards = [
@@ -58,6 +60,13 @@ export default function MainDashboard() {
           />
         ))}
       </div>
+      {/* chart */}
+      <div className="pr-12">
+        <DashboardChart />
+      </div>
+
+      {/* approval */}
+      <DashboardApproval />
     </div>
   );
 }
