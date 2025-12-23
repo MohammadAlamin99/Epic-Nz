@@ -1,6 +1,21 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
 
 export default function App() {
   return (
-    <div className="text-3xl text-red-500">hello world</div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/location/epic" element={<Dashboard />} />
+        <Route path="/location/hikes" element={<Dashboard />} />
+        <Route path="/location/campgrounds" element={<Dashboard />} />
+        <Route path="/location/freedom-camp" element={<Dashboard />} />
+        <Route path="/submission" element={<Dashboard />} />
+        <Route path="/system/subscription" element={<Dashboard />} />
+        <Route path="/system/notification" element={<Dashboard />} />
+        <Route path="/system/activity-log" element={<Dashboard />} />
+        <Route path="/advance/analytics" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
