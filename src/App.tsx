@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import EpicLocation from "./pages/EpicLocation";
+import Hikes from "./pages/Hikes";
+import Campgrounds from "./pages/Campgrounds";
 
 export default function App() {
   return (
@@ -8,8 +10,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/location/epic" element={<EpicLocation />} />
-        <Route path="/location/hikes" element={<Dashboard />} />
-        <Route path="/location/campgrounds" element={<Dashboard />} />
+        <Route path="/location/hikes" element={<Hikes />} />
+        <Route path="/location/campgrounds" element={<Campgrounds />} />
         <Route path="/location/freedom-camp" element={<Dashboard />} />
         <Route path="/submission" element={<Dashboard />} />
         <Route path="/system/subscription" element={<Dashboard />} />

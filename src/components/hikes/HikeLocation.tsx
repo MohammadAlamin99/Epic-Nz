@@ -1,32 +1,20 @@
 import { useState } from "react";
 import { Eye, Trash2 } from "lucide-react";
-import EpicIcon from "../svg/EpicIcon";
 import { FiEdit } from "react-icons/fi";
-import TypeButton from "./TypeButton";
+import TypeButton from "../epicLocation/TypeButton";
 
-export default function LocationManager() {
+export default function HikeLocation() {
   const [locations, setLocations] = useState([
     {
       id: 1,
       name: "Lake Pukaki",
       description: "A Breathtaking Glacial...",
-      type: "Epic Spot",
+      type: "Freedom Camp",
       coordinates: "44.56456 S, 46.4154 E",
       status: "Published",
       updated: "2025-02-10",
       image:
         "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=100&h=100&fit=crop",
-    },
-    {
-      id: 2,
-      name: "Secret Waterfall",
-      description: "A Breathtaking Glacial...",
-      type: "Epic Spot",
-      coordinates: "14.56456 S, 36.4154 E",
-      status: "Published",
-      updated: "2025-02-10",
-      image:
-        "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=100&h=100&fit=crop",
     },
   ]);
 
@@ -70,7 +58,7 @@ export default function LocationManager() {
           </div>
 
           {/* Type */}
-          <TypeButton icon={<EpicIcon />} type={location.type} />
+          <TypeButton type={location.type} bg="bg-[#60A5FA]" />
 
           {/* Coordinates */}
           <div className="col-span-2 text-[14px] font-medium text-white">
