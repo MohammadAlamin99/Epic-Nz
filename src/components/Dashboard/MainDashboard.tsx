@@ -36,7 +36,7 @@ export default function MainDashboard() {
   ];
 
   return (
-    <div className="pl-8 pt-11 text-white h-screen overflow-y-scroll scrollbar-hide">
+    <div className="pl-8 pt-11 text-white h-[calc(100vh-60px)] overflow-y-scroll no-scrollbar">
       <div>
         <h1 className="text-[32px] font-inter font-semibold leading-[150%]">
           Dashboard
@@ -60,6 +60,7 @@ export default function MainDashboard() {
           />
         ))}
       </div>
+
       {/* chart */}
       <div className="pr-12">
         <DashboardChart />
