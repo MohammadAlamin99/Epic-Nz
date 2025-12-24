@@ -1,12 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
+import EpicLocation from "./pages/EpicLocation";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/location/epic" element={<Dashboard />} />
+        <Route path="/location/epic" element={<EpicLocation />} />
         <Route path="/location/hikes" element={<Dashboard />} />
         <Route path="/location/campgrounds" element={<Dashboard />} />
         <Route path="/location/freedom-camp" element={<Dashboard />} />

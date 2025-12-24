@@ -2,6 +2,7 @@ import { CloudSun, MailCheck, MapPin, Users } from "lucide-react";
 import DashboardCard from "./DashboardCard";
 import DashboardChart from "./DashboardChart";
 import DashboardApproval from "./DashboardApproval";
+import Heading from "./Heading";
 
 export default function MainDashboard() {
   const cards = [
@@ -37,14 +38,11 @@ export default function MainDashboard() {
 
   return (
     <div className="pl-8 pt-11 text-white h-[calc(100vh-60px)] overflow-y-scroll no-scrollbar">
-      <div>
-        <h1 className="text-[32px] font-inter font-semibold leading-[150%]">
-          Dashboard
-        </h1>
-        <p className="text-[16px] font-inter font-normal leading-[150%] text-[#F5F5F5A1] opacity-63 mt-2">
-          Welcome back, admin. Here's what's happening today.
-        </p>
-      </div>
+      {/* heading */}
+      <Heading
+        title="Dashboard"
+        subTitle="Welcome back, admin. Here's what's happening today."
+      />
 
       {/* cards */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 mt-8 pr-12">
