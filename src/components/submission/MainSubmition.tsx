@@ -135,7 +135,7 @@ export default function MainSubmition() {
               )}
 
               {/* Actions */}
-              <div className="mt-4 flex flex-wrap items-center gap-2">
+              <div className="mt-4 flex flex-wrap items-center gap-2 w-fit">
                 {submission.status === "pending" && (
                   <>
                     <button className="flex-1 cursor-pointer rounded-[16px] bg-[#3BAF7A] px-3.5 py-2 text-sm font-medium text-neutral-950">
