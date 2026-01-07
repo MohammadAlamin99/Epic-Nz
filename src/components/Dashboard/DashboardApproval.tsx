@@ -53,7 +53,7 @@ export default function DashboardApproval() {
     },
   ]);
   return (
-    <div className="bg-black text-white mt-[30px] pr-11">
+    <div className="text-white mt-[30px] pr-11">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Main Approvals Section */}
         <div className="lg:col-span-2 border border-[#12271F] rounded-[12px] py-2.5 px-12">
