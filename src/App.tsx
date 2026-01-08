@@ -5,6 +5,7 @@ import Hikes from "./pages/Hikes";
 import Campgrounds from "./pages/Campgrounds";
 import Freedom from "./pages/Freedom";
 import Submission from "./pages/Submission";
+import Subscription from "./pages/Subscription";
 
 export default function App() {
   return (
@@ -16,7 +17,7 @@ export default function App() {
         <Route path="/location/campgrounds" element={<Campgrounds />} />
         <Route path="/location/freedom-camp" element={<Freedom />} />
         <Route path="/submission" element={<Submission />} />
-        <Route path="/system/subscription" element={<Dashboard />} />
+        <Route path="/system/subscription" element={<Subscription />} />
         <Route path="/system/notification" element={<Dashboard />} />
         <Route path="/system/activity-log" element={<Dashboard />} />
         <Route path="/advance/analytics" element={<Dashboard />} />
