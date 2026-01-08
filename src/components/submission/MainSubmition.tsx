@@ -67,15 +67,15 @@ export default function MainSubmition() {
         </div>
 
         {/* Filters */}
-        <div className="flex gap-2 rounded-full bg-neutral-900 p-1">
+        <div className="flex gap-2 rounded-full p-1">
           {statusFilters.map((item) => (
             <button
               key={item.value}
               onClick={() => setFilter(item.value)}
-              className={`rounded-full px-4 py-1.5 text-sm transition ${
+              className={`rounded-[12px] cursor-pointer py-2 px-2.5 font-inter font-medium text-[16px] transition ${
                 filter === item.value
-                  ? "bg-emerald-500 text-neutral-950"
-                  : "text-neutral-300 hover:bg-neutral-800"
+                  ? "bg-[#3BB774] text-white border border-[rgba(59,183,117,0.2)]"
+                  : "text-white border border-[rgba(59,183,117,0.2)]"
               }`}
             >
               {item.label}
